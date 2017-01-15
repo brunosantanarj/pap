@@ -1,0 +1,53 @@
+$mobile:    "screen and (max-width: 768px)";
+$tablet:    "screen and (min-width: 768px)";
+$desktop:   "screen and (min-width: 992px)";
+$lgdesktop: "screen and (min-width: 1200px)";
+
+$verde: #52aa2a;
+$azul:  #004576;
+$branco:#fff;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+.title {
+  line-height: 1;
+  font: {
+    size: 40px;
+    weight: 800;
+  }
+  text-transform: uppercase;
+}
+
+.title-2 {
+  color: $azul;
+
+  &::after {
+    content: "";
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25%;
+    background-color: $azul;
+  }
+}
+
+.feature-active {
+  color: $branco !important;
+}
+
+.seta {
+
+}
+
+.circle {
+ @include border-radius(50%);
+}
+

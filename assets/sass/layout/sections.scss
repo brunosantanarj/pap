@@ -1,0 +1,440 @@
+section {
+
+    &.papdigital {
+        text-align: center;
+
+        .title {
+            color: $azul;
+            margin: 35px 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .papdigital-image-circle {
+            background-color: $verde;
+            width: 100px;
+            height: 100px;
+            margin: {
+                top: 20px;
+                bottom: 30px;
+            }
+
+            img {
+                margin-top: 25px
+            }
+        }
+
+        .papdigital-title--description, .papdigital-ul {
+            text-align: left;
+        }
+
+        .papdigital-title--description {
+            font-size: 25px;
+        }
+
+        .papdigital-ul {
+            padding-left: 0;
+            font-size: 18px;
+            font-weight: 300;
+            list-style-type: none;
+
+            li {
+                
+                &:before {
+                    content: " •";
+                    color: $verde;
+                    margin-right: 5px;
+                    font-size: 22px;
+                    line-height: 0;
+                }
+            }
+        }
+
+        .papdigital-conheca {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #009cde;
+            font-weight: 300;
+
+            svg {
+                display: block;
+                margin: 10px auto 0;
+                fill: #009cde;
+            }
+        }
+    }
+
+    &.oquefazemos {
+        background-color: $azul;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+
+        .oquefazemos-title {
+            width: 50%;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            border-bottom: 5px solid;
+        }
+
+        .oquefazemos-features {
+
+            .circle {
+                width: 50px;
+                height: 50px;
+                border: 1px solid #4d7d9f;
+                text-align: center;
+                margin: auto;
+
+                svg {
+                    fill: #4d7d9f;
+                    width: 20px;
+                }
+
+                &.circle-active {
+                    background-color: $verde;
+
+                    svg {
+                        fill: $branco;
+                    }
+                }
+            }
+
+            h5 {
+                text-align: center;
+                color: #4d7d9f;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: 400;
+            }
+        }
+
+        .oquefazemos-description {
+
+            .oquefazemos-description--title {
+                font: {
+                    size: 35px;
+                    weight: 100;
+                }
+            }
+
+            .oquefazemos-description--paragrafo {
+                font: {
+                    size: 18px;
+                    weight: 100;
+                }
+            }
+
+            .oquefazemos-description--bolder_title {
+                font: {
+                    size: 18px;
+                    weight: 400;
+                }
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+            font-size: 18px;
+            font-weight: 100;
+            margin-top: 10px;
+        }
+    }
+
+    &.quematendemos {
+        background: {
+            image: url(../images/bg_quem_atendemos.jpg);
+        }
+        color: #fff;
+        padding: 20px 0;
+
+        .quematendemos-title {
+            text-align: center;
+            line-height: 1.2;
+            font-weight: 500;
+            margin-top: 40px;
+            margin-bottom: 60px;
+
+            &::after {
+                content: "";
+                width: 50%;
+                height: 6px;
+                background-color: #fff;
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                margin-left: -25%;
+            }
+        }
+
+        .quematendemos-feature {
+
+            .quematendemos-feature--head {
+
+                .quematendemos-feature--head_title {
+                    display: inline-block;
+                    margin-top: 9px;
+                    margin-left: 5px;
+                    font-size: 26px;
+                    line-height: 1;
+                    position: relative;
+                    top: 8px;
+                }
+            }
+
+            .quematendemos-lista {
+                padding-left: 15px;
+                font-size: 18px;
+                font-weight: 100;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &.comofunciona {
+        text-align: center;
+
+        .comofunciona_title {
+            line-height: 1.2;
+        }
+
+        .comofunciona-paragrafo {
+            font: {
+                size: 18px;
+                weight: 300;
+            }
+            margin-bottom: 30px;
+        }
+
+        .comofazemos-feature {
+            margin-top: 20px;
+
+            img {
+                width: 110px;
+                height: 125px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    &.paplocalizacao {
+        margin-top: 20px;
+       
+        .container-bg {
+            padding: 0;
+        }
+
+        .bg-mapa {
+            background: {
+                image: url(../images/bg_mapa_01.jpg);
+                position: 1000px;
+            }
+        }
+
+        .bg-mapa-2 {
+            background: {
+                image: url(../images/bg_mapa_02.jpg);
+            }
+            display: inline-block;
+            padding-bottom: 20px;
+        }
+
+        .paplocalizacao-title {
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .paplocalizacao-estados {
+            font-size: 18px;
+            color: #7a9db5;
+            border: 1.5px solid;
+            width: 50px;
+            height: 50px;
+            float: left;
+            text-align: center;
+            padding-top: 11px;
+            margin-right: 10px;
+            margin-top: 20px;
+
+            &.active {
+                background-color: $verde;
+                color: $branco;
+            }
+        }
+
+        .paplocalizacao-title--estado {
+            font-size: 37px;
+            color: $azul;
+            position: relative;
+            margin-bottom: 50px;
+
+            &::after {
+               content: "";
+                width: 50%;
+                height: 6px;
+                background: $azul;
+                position: absolute;
+                left: 1px;
+                bottom: -25px;
+            }
+        }
+
+        ul {
+            padding-left: 3px;
+            font-size: 18px;
+            font-weight: 300;
+            list-style-type: none;
+
+            li {
+                &:before {
+                    content: " •";
+                    color: #52aa2a;
+                    margin-right: 5px;
+                    font-size: 22px;
+                    line-height: 0;
+                }
+            }
+        }
+
+        .paplocalizacao-destaque {
+
+        }
+
+        .paplocalizacao-destaque-title {
+            color: $azul;
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .paplocalizacao-destaque-stitle {
+            font-size: 33px;
+            font-weight: 100;
+            text-align: center;
+            margin-top: 5px;
+            color: $azul;
+        }
+    }
+
+    &.clientes {
+        background-color: #f2f2f2;
+        padding: 20px 0;
+        margin-top: 20px;
+
+        .clientes-title {
+            color: $azul;
+            text-align: center;
+        }
+
+        .clientes-description, .clientes-nome, .clientes-empresa {
+            font: {
+                size: 18px;
+                weight: 300;
+            }
+            text-align: center;
+        }
+
+        .clientes-nome {
+            font-weight: bold;
+            font-style: italic;
+            display: block; 
+        }
+
+        .clientes-empresa {
+            display: block;            
+            font-style: italic;
+        }
+
+        .clientes-pagination {
+
+        }
+    }
+
+    &.contato {
+        background-color: #303030;
+        color: #fff;
+        padding: 20px 0;
+
+        .contato-title {
+
+        }
+
+        .contato-description {
+            font: {
+                size: 18px;
+                weight: 300;
+            }
+            margin-bottom: 20px;
+
+            &:before {
+                content: "";
+                width: 50%;
+                height: 5px;
+                background-color: #fff;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        .contato-feature {
+            
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: $branco;
+                margin-left: 10px;
+                font: {
+                    size: 18px;
+                    weight: 100;
+                }
+            }
+        }
+
+        form {
+            display: block;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            margin-top: 7px;
+            font: {
+                size: 18px;
+                weight: 200;
+            }
+        }
+
+        input {
+            height: 50px;
+        }
+
+        textarea {
+            height: 145px;
+        }
+
+        .btn-submit {
+            @include border-radius(5px);
+            width: 170px;
+            color: #fff;
+            background-color: #009cde;
+            border: 1px solid #009cde;
+            padding: 11px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+    }
+}

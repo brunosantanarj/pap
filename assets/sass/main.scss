@@ -1,0 +1,12 @@
+@import "fonts";
+@import "functions";
+
+body {
+    @import "layout/header";
+    @import "layout/home";
+    @import "layout/sections";
+    @import "layout/footer";
+
+    font-family: 'Roboto', sans-serif;
+    color: #4c4c48;
+}
