@@ -1,5 +1,12 @@
 .header {
     background-color: $azul;
+
+    @media #{$tablet} {
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        width: 100%;
+    }
     padding: {
         top: 10px;
         bottom: 10px;
@@ -49,18 +56,39 @@
                 weight: 300;
             }
 
+            @media #{$tablet} {
+                display: block;
+                position: static;
+                background-color: initial;
+                width: 460px;
+            }
+
             .responsivebtn {
                 font-size: 40px;
                 display: block;
                 margin: 10px 0 20px;
+
+                @media #{$tablet} {
+                    display: none;
+                }
             }
 
             li {
+                @media #{$tablet} {
+                    display: inline;
+                    margin-left: 15px;
+                }
 
                 a {
                     color: #fff;
                 }
             }
+        }
+    }
+
+    .fa-bars {
+        @media #{$tablet} {
+            display: none;
         }
     }
 }

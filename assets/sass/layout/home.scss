@@ -7,6 +7,14 @@
     height: 500px;
     color: #fff;
 
+    @media #{$tablet}{
+        height: 930px;
+        background: {   
+            position: 56%;
+            size: 190% 100%;
+        }
+    }
+
     .main-description {
         padding-left: 11px;
         border-left: 5px solid;
@@ -15,12 +23,28 @@
         h2 {
             font-weight: 400;
             text-transform: uppercase;
+
+            @media #{$tablet} {
+                font: {
+                    weight: bold;
+                    size: 80px;
+                }
+                margin-top: 200px;
+            }
         }
 
         p {
             font: {
                 size: 18px;
                 weight: 100;
+            }
+
+            @media #{$tablet} {
+                font: {
+                    size: 26px;
+                }
+                width: 85%;
+                margin-bottom: 80px;
             }
         }
     }

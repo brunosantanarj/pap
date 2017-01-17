@@ -23,13 +23,29 @@ section {
                 bottom: 30px;
             }
 
+            @media #{$tablet} {
+                width: 120px;
+                height: 120px;
+            }
+
             img {
-                margin-top: 25px
+                margin-top: 25px;
+                
+                @media #{$tablet} {
+                    margin-top: 30px;
+                    height: 60px;
+                }
             }
         }
 
         .papdigital-title--description, .papdigital-ul {
             text-align: left;
+
+            li {
+                @media #{$tablet} {
+                    margin-bottom: 4px;
+                }
+            }
         }
 
         .papdigital-title--description {
@@ -77,14 +93,41 @@ section {
         padding-bottom: 20px;
         color: #fff;
 
+        @media #{$tablet} {
+            padding-top: 70px;
+
+            .oquefazemos-box {
+                margin-left: 265px;
+            }
+        }
+
         .oquefazemos-title {
             width: 50%;
             padding-bottom: 10px;
             margin-bottom: 25px;
             border-bottom: 5px solid;
+
+            @media #{$tablet} {
+                width: 100%;
+                border: 0 none;
+
+                &::after {
+                    content: "";
+                    width: 40%;
+                    height: 5px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 17px;
+                    display: block;
+                    bottom: 15px;
+                }
+            }
         }
 
         .oquefazemos-features {
+            @media #{$tablet} {
+                margin-top: 20px;
+            }
 
             .circle {
                 width: 50px;
@@ -118,10 +161,31 @@ section {
 
         .oquefazemos-description {
 
+            @media #{$tablet} {
+                .circle {
+                    width: 220px;
+                    height: 220px;
+                    background-color: $verde;
+                    border: 7px solid #2e668e;
+                    float: left;
+
+                    svg {
+                        width: 206px;
+                        height: 110px;
+                        margin: 50px auto 0;
+                        fill: #fff;
+                    }
+                }
+            }
+
             .oquefazemos-description--title {
                 font: {
                     size: 35px;
                     weight: 100;
+                }
+
+                @media #{$tablet} {
+                    font-size: 55px;
                 }
             }
 
@@ -171,6 +235,11 @@ section {
                 left: 50%;
                 bottom: 30px;
                 margin-left: -25%;
+
+                @media #{$tablet} {
+                    width: 25%;
+                    margin-left: -12.5%;
+                }
             }
         }
 
@@ -203,6 +272,10 @@ section {
 
         .comofunciona_title {
             line-height: 1.2;
+
+            @media #{$tablet} {
+                margin-top: 70px;
+            }
         }
 
         .comofunciona-paragrafo {
@@ -219,6 +292,13 @@ section {
             img {
                 width: 110px;
                 height: 125px;
+
+                @media #{$tablet} {
+                    width: 150px;
+                    height: 150px;
+                    margin-bottom: 15px;
+                    margin-top: 10px;
+                }
             }
 
             p {
@@ -240,6 +320,10 @@ section {
                 image: url(../images/bg_mapa_01.jpg);
                 position: 1000px;
             }
+            @media #{$tablet} {
+                position: absolute;
+                left: 0;
+            }
         }
 
         .bg-mapa-2 {
@@ -248,12 +332,26 @@ section {
             }
             display: inline-block;
             padding-bottom: 20px;
+
+            @media #{$tablet} {
+                margin-top: 240px;
+                width: 100%;
+
+                .img-estado {
+                    width: 618px;
+                    margin: -200px 50px 25px;
+                }
+            }
         }
 
         .paplocalizacao-title {
             color: #fff;
             line-height: 1.1;
             margin-bottom: 20px;
+
+            @media #{$tablet} {
+                font-size: 90px;
+            }
         }
 
         .paplocalizacao-estados {
@@ -336,6 +434,20 @@ section {
         .clientes-title {
             color: $azul;
             text-align: center;
+
+            &::before {
+
+                @media #{$tablet} {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -12.5%;
+                    width: 25%;
+                    background-color: $azul;
+                    height: 5px;
+                    top: 80px;
+                }
+            }
         }
 
         .clientes-description, .clientes-nome, .clientes-empresa {
@@ -344,6 +456,35 @@ section {
                 weight: 300;
             }
             text-align: center;
+        }
+
+        .clientes-description {
+            @media #{$tablet} {
+                width: 505px;
+                margin: 55px auto;
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../images/aspa_1.svg);
+                    width: 96px;
+                    height: 76px;
+                    position: absolute;
+                    left: 25px;
+                    top: 80px;
+
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../images/aspa_2.svg);
+                    width: 96px;
+                    height: 76px;
+                    position: absolute;
+                    right: 20px;
+                    top: 177px;
+                }
+            }
         }
 
         .clientes-nome {
@@ -385,6 +526,11 @@ section {
                 background-color: #fff;
                 position: absolute;
                 bottom: 0;
+
+                @media #{$tablet} {
+                    width: 25%;
+                    
+                }
             }
         }
 
@@ -399,6 +545,14 @@ section {
                 font: {
                     size: 18px;
                     weight: 100;
+                }
+
+                @media #{$tablet} {
+                    display: block;
+                    margin: {
+                        top: 10px;
+                        left: 0;
+                    }
                 }
             }
         }
