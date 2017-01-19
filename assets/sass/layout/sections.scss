@@ -430,10 +430,17 @@ section {
                     top: inherit;
                 }
 
+                .img-estados-dk {
+                    height: 600px;
+                }
+
                 .img-estado {
-                    width: 554px;
-                    position: relative;
-                    z-index: 99;
+                        width: 554px;
+                        height: 687px;
+                        position: absolute;
+                        z-index: 9999;
+                        margin: 0;
+                        top: 51px;
                 }
             }
         }
