@@ -8,6 +8,7 @@
     <title>PapDigital</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <!--[if lt IE 9]>
@@ -115,8 +116,8 @@
     </section>
 
     <section class="oquefazemos">
-        <div class="container">
-            <div class="row">
+        <div class="container ">
+            <div class="row swiper-container" id="oquefazemos">
                 <div class="col-xs-12 col-sm-6">
                     <h1 class="oquefazemos-title title">
                         O que fazemos
@@ -124,32 +125,33 @@
                 </div>
                 <div class="oquefazemos-features">
                     <div class="col-xs-4 col-sm-2">
-                        <div class="circle circle-active ">
+                        <div class="circle circle-active swiper-pagination-switch">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                                 <path class="cls-1" d="M1696.76,1526.93h-45.79a2.108,2.108,0,0,1-2.1-2.11v-45.79a2.1,2.1,0,0,1,2.1-2.1h45.79a2.1,2.1,0,0,1,2.1,2.1v45.79A2.108,2.108,0,0,1,1696.76,1526.93Zm-2.11-45.79h-41.58v9.1h41.58v-9.1Zm0,11.2h-41.58v30.38h41.58v-30.38Zm-35.16,6.34h14.38a1.05,1.05,0,1,1,0,2.1h-14.38A1.05,1.05,0,0,1,1659.49,1498.68Zm0,6.66h14.38a1.05,1.05,0,0,1,0,2.1h-14.38A1.05,1.05,0,0,1,1659.49,1505.34Zm0,6.66h14.38a1.05,1.05,0,1,1,0,2.1h-14.38A1.05,1.05,0,0,1,1659.49,1512Zm19.63-13.32h9.11a1.052,1.052,0,0,1,1.06,1.05v13.32a1.052,1.052,0,0,1-1.06,1.05h-9.11a1.05,1.05,0,0,1-1.05-1.05v-13.32A1.05,1.05,0,0,1,1679.12,1498.68Zm1.06,13.32h7v-11.22h-7V1512Zm-21.76-28.9a2.65,2.65,0,1,1-2.65,2.66A2.65,2.65,0,0,1,1658.42,1483.1Zm7.18,0a2.65,2.65,0,1,1-2.65,2.66A2.657,2.657,0,0,1,1665.6,1483.1Zm7.18,0a2.65,2.65,0,1,1-2.65,2.66A2.657,2.657,0,0,1,1672.78,1483.1Z" transform="translate(-1648.88 -1476.94)"/>
                             </svg>
                         </div>
-                        <h5 class="feature-active">O sistema</h5>
+                        <h5 class="feature-active feature-1">O sistema</h5>
                     </div>
                     <div class="col-xs-4 col-sm-2">
-                        <div class="circle ">
+                        <div class="circle swiper-pagination-switch-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                                 <path class="cls-1" d="M2090.6,1517.52h-19.7l8.64,8.83a2.209,2.209,0,0,1-.01,3.09,2.107,2.107,0,0,1-1.51.64,2.129,2.129,0,0,1-1.53-.65l-6.59-6.73v1.92a2.15,2.15,0,1,1-4.3,0v-1.92l-6.59,6.73a2.113,2.113,0,0,1-3.04.01,2.209,2.209,0,0,1-.01-3.09l8.65-8.83H2044.9a2.166,2.166,0,0,1-2.15-2.18v-33.06a2.168,2.168,0,0,1,2.15-2.19h45.7a2.177,2.177,0,0,1,2.16,2.19v33.06A2.175,2.175,0,0,1,2090.6,1517.52Zm-2.15-33.06h-41.4v3.46h41.4v-3.46Zm0,5.64h-41.4v23.05h41.4V1490.1Zm-32.44,9.83a2.168,2.168,0,0,1,2.15,2.19v6.55a2.15,2.15,0,1,1-4.3,0v-6.55A2.168,2.168,0,0,1,2056.01,1499.93Zm7.83-7.1a2.168,2.168,0,0,1,2.15,2.19v13.65a2.15,2.15,0,1,1-4.3,0v-13.65A2.168,2.168,0,0,1,2063.84,1492.83Zm7.83,9.29a2.166,2.166,0,0,1,2.15,2.18v4.37a2.155,2.155,0,1,1-4.31,0v-4.37A2.168,2.168,0,0,1,2071.67,1502.12Zm7.82-6.56a2.168,2.168,0,0,1,2.15,2.19v10.92a2.15,2.15,0,1,1-4.3,0v-10.92A2.168,2.168,0,0,1,2079.49,1495.56Z" transform="translate(-2042.75 -1480.09)"/>
                           </svg>
                         </div>
-                        <h5>Planejamento estratégico</h5>
+                        <h5 class="feature-2">Planejamento estratégico</h5>
                     </div>
                     <div class="col-xs-4 col-sm-2">
-                        <div class="circle">
+                        <div class="circle swiper-pagination-switch-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                             <path class="cls-1" d="M2520,1527a25,25,0,1,1,25-25A25.035,25.035,0,0,1,2520,1527Zm2.17-45.53v6.08h-4.34v-6.08a20.693,20.693,0,0,0-18.37,18.36h6.1v4.34h-6.1a20.693,20.693,0,0,0,18.37,18.36v-6.08h4.34v6.08a20.674,20.674,0,0,0,18.36-18.36h-6.08v-4.34h6.08A20.674,20.674,0,0,0,2522.17,1481.47Zm-2.17,22.98a2.45,2.45,0,1,1,2.45-2.45A2.454,2.454,0,0,1,2520,1504.45Z" transform="translate(-2495 -1477)"/>
                             </svg>
                         </div>
-                        <h5>Microtargeting</h5>
+                        <h5 class="feature-3">Microtargeting</h5>
                     </div>
                 </div>
-                <div class="col-xs-12">
-                    <div class="oquefazemos-description">
+                <div class="col-xs-12 swiper-wrapper">
+                    
+                    <div class="oquefazemos-description swiper-slide">
                         <div class="circle circle-active hidden-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                                 <path class="cls-1" d="M1696.76,1526.93h-45.79a2.108,2.108,0,0,1-2.1-2.11v-45.79a2.1,2.1,0,0,1,2.1-2.1h45.79a2.1,2.1,0,0,1,2.1,2.1v45.79A2.108,2.108,0,0,1,1696.76,1526.93Zm-2.11-45.79h-41.58v9.1h41.58v-9.1Zm0,11.2h-41.58v30.38h41.58v-30.38Zm-35.16,6.34h14.38a1.05,1.05,0,1,1,0,2.1h-14.38A1.05,1.05,0,0,1,1659.49,1498.68Zm0,6.66h14.38a1.05,1.05,0,0,1,0,2.1h-14.38A1.05,1.05,0,0,1,1659.49,1505.34Zm0,6.66h14.38a1.05,1.05,0,1,1,0,2.1h-14.38A1.05,1.05,0,0,1,1659.49,1512Zm19.63-13.32h9.11a1.052,1.052,0,0,1,1.06,1.05v13.32a1.052,1.052,0,0,1-1.06,1.05h-9.11a1.05,1.05,0,0,1-1.05-1.05v-13.32A1.05,1.05,0,0,1,1679.12,1498.68Zm1.06,13.32h7v-11.22h-7V1512Zm-21.76-28.9a2.65,2.65,0,1,1-2.65,2.66A2.65,2.65,0,0,1,1658.42,1483.1Zm7.18,0a2.65,2.65,0,1,1-2.65,2.66A2.657,2.657,0,0,1,1665.6,1483.1Zm7.18,0a2.65,2.65,0,1,1-2.65,2.66A2.657,2.657,0,0,1,1672.78,1483.1Z" transform="translate(-1648.88 -1476.94)"/>
@@ -171,7 +173,7 @@
                         </ul>
                         </div>
                     </div>
-                    <div class="oquefazemos-description" style="display: none">
+                    <div class="oquefazemos-description swiper-slide">
                         <div class="circle hidden-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                             <path class="cls-1" d="M2520,1527a25,25,0,1,1,25-25A25.035,25.035,0,0,1,2520,1527Zm2.17-45.53v6.08h-4.34v-6.08a20.693,20.693,0,0,0-18.37,18.36h6.1v4.34h-6.1a20.693,20.693,0,0,0,18.37,18.36v-6.08h4.34v6.08a20.674,20.674,0,0,0,18.36-18.36h-6.08v-4.34h6.08A20.674,20.674,0,0,0,2522.17,1481.47Zm-2.17,22.98a2.45,2.45,0,1,1,2.45-2.45A2.454,2.454,0,0,1,2520,1504.45Z" transform="translate(-2495 -1477)"/>
@@ -193,7 +195,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="oquefazemos-description" style="display: none">
+                    <div class="oquefazemos-description swiper-slide">
                     <div class="circle hidden-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                                 <path class="cls-1" d="M2090.6,1517.52h-19.7l8.64,8.83a2.209,2.209,0,0,1-.01,3.09,2.107,2.107,0,0,1-1.51.64,2.129,2.129,0,0,1-1.53-.65l-6.59-6.73v1.92a2.15,2.15,0,1,1-4.3,0v-1.92l-6.59,6.73a2.113,2.113,0,0,1-3.04.01,2.209,2.209,0,0,1-.01-3.09l8.65-8.83H2044.9a2.166,2.166,0,0,1-2.15-2.18v-33.06a2.168,2.168,0,0,1,2.15-2.19h45.7a2.177,2.177,0,0,1,2.16,2.19v33.06A2.175,2.175,0,0,1,2090.6,1517.52Zm-2.15-33.06h-41.4v3.46h41.4v-3.46Zm0,5.64h-41.4v23.05h41.4V1490.1Zm-32.44,9.83a2.168,2.168,0,0,1,2.15,2.19v6.55a2.15,2.15,0,1,1-4.3,0v-6.55A2.168,2.168,0,0,1,2056.01,1499.93Zm7.83-7.1a2.168,2.168,0,0,1,2.15,2.19v13.65a2.15,2.15,0,1,1-4.3,0v-13.65A2.168,2.168,0,0,1,2063.84,1492.83Zm7.83,9.29a2.166,2.166,0,0,1,2.15,2.18v4.37a2.155,2.155,0,1,1-4.31,0v-4.37A2.168,2.168,0,0,1,2071.67,1502.12Zm7.82-6.56a2.168,2.168,0,0,1,2.15,2.19v10.92a2.15,2.15,0,1,1-4.3,0v-10.92A2.168,2.168,0,0,1,2079.49,1495.56Z" transform="translate(-2042.75 -1480.09)"/>
@@ -218,17 +220,45 @@
                 </div>
             </div>
         </div>
+        
+        <div class="oquefazemos-nav visible-md visible-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-left" width="50" height="97" viewBox="0 0 50 97">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #fff;
+                        fill-rule: evenodd;
+                    }
+                    </style>
+                </defs>
+                <path id="Shape_816_copy_3" data-name="Shape 816 copy 3" class="cls-1" d="M1518,2535.3l-0.71.7-48.54-47.68-0.05.05-0.7-.7,48.55-48.67,0.7,0.71-47.79,47.91Z" transform="translate(-1468 -2439)"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-right" width="50" height="97" viewBox="0 0 50 97">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #fff;
+                        fill-rule: evenodd;
+                    }
+                    </style>
+                </defs>
+                <path id="Shape_816_copy_2" data-name="Shape 816 copy 2" class="cls-1" d="M2937.3,2488.37l-0.05-.05L2888.71,2536l-0.71-.7,48.54-47.68-47.79-47.91,0.7-.71,48.55,48.67Z" transform="translate(-2888 -2439)"/>
+            </svg>
+        </div> 
     </section>
 
     <section class="quematendemos">
-        <div class="container">
+        <div class="container swiper-container" id="quematendemos">
             <div class="row">
                 <div class="col-xs-12">
                     <h1 class="quematendemos-title title">
                         Quem atendemos
                     </h1>
                 </div>
-                <div class="quematendemos-feature col-sm-4">
+            </div>
+            <div class="row swiper-wrapper">
+                <div class="quematendemos-feature col-sm-4 swiper-slide">
                     <div class="quematendemos-feature--head">
                         <img src="assets/images/icon_politicos.svg" alt="Políticos" />
                         <h3 class="quematendemos-feature--head_title">Políticos</h3>
@@ -241,7 +271,7 @@
                         <li>Definir plano estratégico de atuação durante a campanha eleitoral ou mandato.</li>
                     </ul>
                 </div>
-                <div class="quematendemos-feature col-sm-4">
+                <div class="quematendemos-feature col-sm-4 swiper-slide">
                     <div class="quematendemos-feature--head">
                         <img src="assets/images/icon_setor_publico.svg" alt="Setor público" />
                         <h3 class="quematendemos-feature--head_title">Setor público</h3>
@@ -256,7 +286,7 @@
                         <li>Campanhas de mobilização.</li>
                     </ul>
                 </div>
-                <div class="quematendemos-feature col-sm-4">
+                <div class="quematendemos-feature col-sm-4 swiper-slide">
                     <div class="quematendemos-feature--head">
                         <img src="assets/images/icon_setor_privado.svg" alt="Setor Privado" />
                         <h3 class="quematendemos-feature--head_title">Setor Privado</h3>
@@ -305,7 +335,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3">
-                    <div class="comofazemos-feature">
+                    <div class="comofazemos-feature positionfeature">
                         <img src="assets/images/como_funciona_5.svg" alt="" />
                         <p>Promotor aborda o indivíduo de porta a porta em locais previamente definidos</p>
                     </div>
@@ -323,7 +353,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3">
-                    <div class="comofazemos-feature">
+                    <div class="comofazemos-feature positionfeature2">
                         <img src="assets/images/como_funciona_8.svg" alt="" />
                         <p>Cliente analisa as informações para a tomada de decisões estratégica</p>
                     </div>
@@ -334,11 +364,12 @@
 
     <section class="paplocalizacao">
         <div class="container container-bg">
-            <div class="col-xs-12 bg-mapa">
-                <h1 class="paplocalizacao-title title">pap digital pelo brasil</h1>
-            </div>
-            <div class="bg-mapa-2">
-                <div class="col-xs-12 col-sm-push-7 col-sm-6">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 bg-mapa">
+                    <h1 class="paplocalizacao-title title">pap digital pelo brasil</h1>
+                </div>
+            
+                <div class="col-xs-12 col-md-5 bg-mapa-2 smbg">
                     <div class="circle paplocalizacao-estados">
                         MG
                     </div>
@@ -352,7 +383,7 @@
                         SP
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-pull-6 col-sm-6">
+                <div class="col-xs-12 col-md-6 col-md-offset-5 bg-mapa-2">
                     <h2 class="paplocalizacao-title--estado title">Rio de Janeiro</h2>
                     <ul>
                         <li>Petrópolis</li>
@@ -441,6 +472,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+    <script src="assets/swiper/dist/js/swiper.min.js"></script>
     <script src="assets/js/functions.js"></script>
 </body>
 

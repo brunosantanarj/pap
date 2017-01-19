@@ -98,7 +98,15 @@ section {
 
             .oquefazemos-box {
                 margin-left: 265px;
+
+                @media #{$desktop} {
+                   margin-left: 429px;
+                }
             }
+        }
+
+        @media #{$desktop} {
+            position: relative;
         }
 
         .oquefazemos-title {
@@ -159,6 +167,34 @@ section {
             }
         }
 
+        .oquefazemos-nav {
+            position: absolute;
+            left: 50%;
+            top: 340px;
+            width: 90%;
+            margin-left: -45%;
+            display: none;
+
+            @media #{$desktop} {
+                display: block;
+
+                .svg-left {
+                    float: left;
+                    cursor: pointer;
+                }
+
+                .svg-right {
+                    float: right;
+                    cursor: pointer;
+                }
+            }
+
+            @media screen and (min-width: 1919px) {
+                width: 68%;
+                margin-left: -34%;
+            }
+        }
+
         .oquefazemos-description {
 
             @media #{$tablet} {
@@ -174,6 +210,20 @@ section {
                         height: 110px;
                         margin: 50px auto 0;
                         fill: #fff;
+                    }
+                }
+            }
+
+            @media #{$desktop} {
+                .circle {
+                    width: 370px;
+                    height: 370px;
+                    margin-right: 60px;
+
+                    svg {
+                        width: 347px;
+                        height: 206px;
+                        margin: 74px auto 0;
                     }
                 }
             }
@@ -201,6 +251,10 @@ section {
                     size: 18px;
                     weight: 400;
                 }
+
+                @media #{$desktop} {
+                    display: block;
+                }
             }
         }
 
@@ -209,6 +263,10 @@ section {
             font-size: 18px;
             font-weight: 100;
             margin-top: 10px;
+
+            @media #{$desktop} {
+                display: inline-block;
+            }
         }
     }
 
@@ -312,7 +370,15 @@ section {
         margin-top: 20px;
        
         .container-bg {
-            padding: 0;
+            padding: 0 6px;
+
+            @media #{$tablet} {
+                position: relative;
+            }
+
+            @media #{$desktop} {
+                position: static;
+            }
         }
 
         .bg-mapa {
@@ -320,7 +386,7 @@ section {
                 image: url(../images/bg_mapa_01.jpg);
                 position: 1000px;
             }
-            @media #{$tablet} {
+            @media #{$desktop} {
                 position: absolute;
                 left: 0;
             }
@@ -334,12 +400,31 @@ section {
             padding-bottom: 20px;
 
             @media #{$tablet} {
-                margin-top: 240px;
-                width: 100%;
+                margin-top: 0;
 
                 .img-estado {
                     width: 618px;
                     margin: -200px 50px 25px;
+                }
+
+                &.smbg {
+                    position: absolute;
+                    z-index: 23;
+                    right: 0;
+                    top: 238px;
+                }
+            }
+
+            @media #{$desktop} {
+                &.smbg {
+                    padding-top: 30px;
+                    top: inherit;
+                }
+
+                .img-estado {
+                    width: 554px;
+                    position: relative;
+                    z-index: 99;
                 }
             }
         }
@@ -351,6 +436,15 @@ section {
 
             @media #{$tablet} {
                 font-size: 90px;
+                z-index: 1;
+            }
+
+            @media #{$desktop} {
+                font-size: 120px;
+                padding: {
+                    top: 50px;
+                    bottom: 50px;
+                }
             }
         }
 
@@ -370,6 +464,10 @@ section {
                 background-color: $verde;
                 color: $branco;
             }
+
+            @media #{$tablet} {
+                float: right;
+            }
         }
 
         .paplocalizacao-title--estado {
@@ -377,6 +475,14 @@ section {
             color: $azul;
             position: relative;
             margin-bottom: 50px;
+
+            @media #{$tablet} {
+                z-index: 30;
+            }
+
+            @media #{$desktop} {
+                padding-top: 30px;
+            }
 
             &::after {
                content: "";
