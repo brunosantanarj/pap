@@ -1,5 +1,6 @@
 .header {
     background-color: $azul;
+    z-index: 2;
 
     @media #{$tablet} {
         background-color: transparent;
@@ -17,6 +18,10 @@
         height: 10px;
         float: left;
         margin-top: 5px;
+
+        .logo-cor {
+            display: none;
+        }
     }
 
     .header-menu {
@@ -60,7 +65,7 @@
                 display: block;
                 position: static;
                 background-color: initial;
-                width: 460px;
+                width: 545px;
             }
 
             .responsivebtn {
@@ -81,6 +86,13 @@
 
                 a {
                     color: #fff;
+                    padding: 10px;
+
+                    &:hover {
+                        background-color: #009cde;
+                        @include border-radius(5px);
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -89,6 +101,46 @@
     .fa-bars {
         @media #{$tablet} {
             display: none;
+        }
+    }
+
+    &.header-fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: $branco;
+        z-index: 9999;
+        padding-top: 20px;
+
+        .logo-cor {
+            display: block;
+        }
+
+        .logo-branco {
+            display: none;
+        }
+        .header-menu {
+            .header-menu--ul {
+                li {
+                    a {
+                        color: #4e4d49;
+                        font-weight: 400;
+                        @media #{$mobile} {
+                            color: #fff;
+                        }
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+        .responsivebutton {
+            color: #4e4d49;
         }
     }
 }

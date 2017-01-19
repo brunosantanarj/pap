@@ -84,6 +84,11 @@ var mySwiper = new Swiper('#oquefazemos', {
     speed: 400,
     spaceBetween: 0,
     centeredSlides: true });
+
+    $('.header-menu ul li').on('click', function() {
+        $(".header-menu--ul").toggle(function(){});
+        $(".header-menu").removeClass("all-body");
+    })
  } else {
      $('#quematendemos').removeClass('swiper-container');
      $('#quematendemos').removeClass('swiper-container-horizontal');
@@ -109,3 +114,26 @@ var clientesswiper = new Swiper('#clientes', {
     pagination: '.clientes-pagination'
 	});
     
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('header').addClass("header-fixed");
+        }
+        else{
+            $('header').removeClass("header-fixed");
+        }
+    });
+
+    $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});

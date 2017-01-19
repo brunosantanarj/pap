@@ -15,6 +15,11 @@
         }
     }
 
+    @media #{$desktop} {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .main-description {
         padding-left: 11px;
         border-left: 5px solid;
