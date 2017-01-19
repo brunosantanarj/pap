@@ -98,6 +98,14 @@ var mySwiper = new Swiper('#oquefazemos', {
   
   if(width > 1360) {
       $('body section.paplocalizacao .paplocalizacao-title').css('padding-left', $('.positionfeature').offset().left - 50);
-
-      $('body section.paplocalizacao .bg-mapa-2.smbg').css('padding-right', $('.positionfeature2').offset().left)
   }
+
+  var estadosswiper = new Swiper('#estados', {
+    speed: 400    
+	});
+
+var clientesswiper = new Swiper('#clientes', {
+    speed: 400,
+    pagination: '.clientes-pagination'
+	});
+    

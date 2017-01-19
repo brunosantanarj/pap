@@ -328,6 +328,10 @@ section {
     &.comofunciona {
         text-align: center;
 
+        @media #{$desktop} {
+            margin-bottom: 60px;
+        }
+
         .comofunciona_title {
             line-height: 1.2;
 
@@ -374,6 +378,10 @@ section {
 
             @media #{$tablet} {
                 position: relative;
+
+                .swiper-container {
+                    z-index: 1000;
+                }
             }
 
             @media #{$desktop} {
@@ -418,6 +426,7 @@ section {
             @media #{$desktop} {
                 &.smbg {
                     padding-top: 30px;
+                    padding-left: 150px;
                     top: inherit;
                 }
 
@@ -468,6 +477,10 @@ section {
             @media #{$tablet} {
                 float: right;
             }
+
+            @media #{$desktop} {
+                    float: left;
+            }
         }
 
         .paplocalizacao-title--estado {
@@ -514,6 +527,10 @@ section {
 
         .paplocalizacao-destaque {
 
+            @media #{$desktop} {
+                margin: 65px 0;
+            }
+
         }
 
         .paplocalizacao-destaque-title {
@@ -521,6 +538,10 @@ section {
             font-size: 55px;
             text-align: center;
             margin-bottom: 0;
+
+            @media #{$desktop} {
+                font-size: 77px;
+            }
         }
 
         .paplocalizacao-destaque-stitle {
@@ -529,6 +550,10 @@ section {
             text-align: center;
             margin-top: 5px;
             color: $azul;
+
+            @media #{$desktop} {
+                font-size: 49px;
+            }
         }
     }
 
@@ -552,6 +577,11 @@ section {
                     background-color: $azul;
                     height: 5px;
                     top: 80px;
+                }
+
+                @media #{$desktop} {
+                    width: 12.5%;
+                    margin-left: -6.25%;
                 }
             }
         }
@@ -578,7 +608,10 @@ section {
                     position: absolute;
                     left: 25px;
                     top: 80px;
-
+                    
+                    @media #{$desktop} {
+                        top: 20px;
+                    }
                 }
                 &::after {
                     content: "";
@@ -589,7 +622,16 @@ section {
                     position: absolute;
                     right: 20px;
                     top: 177px;
+
+                    @media #{$desktop} {
+                        top: 80px;
+                    }
                 }
+            }
+
+            @media #{$desktop} {
+                width: 815px;
+                margin-bottom: 0;
             }
         }
 
@@ -605,7 +647,21 @@ section {
         }
 
         .clientes-pagination {
+            text-align: center;
+            display: block;
+            margin: 30px;
 
+            span {
+                background-color: #e3e3e2;
+                width: 15px;
+                height: 15px;
+                margin-left: 10px;
+                cursor: pointer;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: #009cde
+                }
+            }
         }
     }
 
@@ -659,6 +715,10 @@ section {
                         top: 10px;
                         left: 0;
                     }
+                }
+
+                @media #{$desktop} {
+                    font-size: 30px;
                 }
             }
         }
