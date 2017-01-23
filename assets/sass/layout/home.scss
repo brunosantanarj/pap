@@ -8,7 +8,7 @@
     color: #fff;
 
     @media #{$tablet}{
-        height: 930px;
+        height: 100vh;
         background: {   
             position: 56%;
             size: 190% 100%;
@@ -18,6 +18,8 @@
     @media #{$desktop} {
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
     }
 
     .main-description {
@@ -58,6 +60,11 @@
         }
     }
 
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
     .main-seta {
         fill: #b4b4b5;
         width: 70px;
@@ -67,7 +74,11 @@
         position: absolute;
         left: 50%;
         margin-left: -35px;
-        bottom: -135px;
+        bottom: 35px;
+
+        @media #{$mobile} {
+                bottom: 86px;
+        }
 
         svg {
             width: 30px;
