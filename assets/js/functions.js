@@ -279,3 +279,13 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).on('scroll', function() {
+    if ($(this).scrollTop() >= $('.seta').position().top && $(this).scrollTop() <= $('.oquefazemos').position().top) {
+        $('.elements-to-show').each(function(index) {
+            $(this).delay(400 * index).animate({
+                'opacity': '1'
+            }, 600);
+        });
+    }
+});

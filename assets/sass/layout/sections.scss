@@ -2,6 +2,12 @@ section {
 
     &.papdigital {
         text-align: center;
+        @media #{$mobile} {
+            padding: 40px 0;
+        }
+        @media #{$desktop} {
+            padding: 80px 0;
+        }
 
         .title {
             color: $azul;
@@ -12,6 +18,10 @@ section {
             font-size: 18px;
             font-weight: 300;
             margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 60px;
+            }
         }
 
         .papdigital-image-circle {
@@ -26,6 +36,7 @@ section {
             @media #{$tablet} {
                 width: 120px;
                 height: 120px;
+                margin-top: 60px;
             }
 
             img {
@@ -71,18 +82,25 @@ section {
         }
 
         .papdigital-conheca {
+            a{
+                text-decoration: none;
+            }
             font-size: 18px;
             text-transform: uppercase;
             margin-top: 20px;
             margin-bottom: 20px;
             color: #009cde;
-            font-weight: 300;
+            font-weight: 400;
 
             svg {
                 display: block;
                 margin: 10px auto 0;
                 fill: #009cde;
             }
+        }
+
+        .elements-to-show {
+            opacity: 0;
         }
     }
 
@@ -107,6 +125,7 @@ section {
 
         @media #{$desktop} {
             position: relative;
+            padding: 90px 0 70px;
         }
 
         .oquefazemos-title {
@@ -121,7 +140,7 @@ section {
 
                 &::after {
                     content: "";
-                    width: 40%;
+                    width: 25%;
                     height: 5px;
                     background-color: #fff;
                     position: absolute;
@@ -156,13 +175,22 @@ section {
                         fill: $branco;
                     }
                 }
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $verde;
+
+                    svg {
+                        fill: $branco;
+                    }
+                }
             }
 
             h5 {
                 text-align: center;
                 color: #4d7d9f;
                 text-transform: uppercase;
-                font-size: 10px;
+                font-size: 11.5px;
                 font-weight: 400;
             }
         }
@@ -170,7 +198,7 @@ section {
         .oquefazemos-nav {
             position: absolute;
             left: 50%;
-            top: 340px;
+            top: 410px;
             width: 90%;
             margin-left: -45%;
             display: none;
@@ -201,6 +229,7 @@ section {
                 .circle {
                     width: 220px;
                     height: 220px;
+                    margin-top: 40px;
                     background-color: $verde;
                     border: 7px solid #2e668e;
                     float: left;
@@ -215,15 +244,16 @@ section {
             }
 
             @media #{$desktop} {
+                margin-top: 60px;
                 .circle {
                     width: 370px;
                     height: 370px;
                     margin-right: 60px;
 
                     svg {
-                        width: 347px;
-                        height: 206px;
-                        margin: 74px auto 0;
+                        width: 353px;
+                        height: 150px;
+                        margin: 103px auto 0;
                     }
                 }
             }
@@ -276,6 +306,9 @@ section {
         }
         color: #fff;
         padding: 20px 0;
+        @media #{$desktop} {
+            padding: 75px 0;
+        }
 
         .quematendemos-title {
             text-align: center;
@@ -302,6 +335,9 @@ section {
         }
 
         .quematendemos-feature {
+            @media #{$desktop} {
+                margin-top: 20px;
+            }
 
             .quematendemos-feature--head {
 
