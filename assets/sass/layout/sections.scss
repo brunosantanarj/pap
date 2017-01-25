@@ -199,8 +199,8 @@ section {
             position: absolute;
             left: 50%;
             top: 410px;
-            width: 90%;
-            margin-left: -45%;
+            width: 93%;
+            margin-left: -47%;
             display: none;
 
             @media #{$desktop} {
@@ -303,6 +303,7 @@ section {
     &.quematendemos {
         background: {
             image: url(../images/bg_quem_atendemos.jpg);
+            attachment: fixed;
         }
         color: #fff;
         padding: 20px 0;
@@ -328,8 +329,8 @@ section {
                 margin-left: -25%;
 
                 @media #{$tablet} {
-                    width: 25%;
-                    margin-left: -12.5%;
+                    width: 15%;
+                    margin-left: -7.5%;
                 }
             }
         }
@@ -359,13 +360,17 @@ section {
                 margin-top: 20px;
             }
         }
+
+        .elements-to-show-2 {
+            opacity: 0;
+        }
     }
 
     &.comofunciona {
         text-align: center;
 
         @media #{$desktop} {
-            margin-bottom: 60px;
+            margin-bottom: 85px;
         }
 
         .comofunciona_title {
@@ -382,6 +387,9 @@ section {
                 weight: 300;
             }
             margin-bottom: 30px;
+            @media #{$desktop} {
+                margin-bottom: 70px;
+            }
         }
 
         .comofazemos-feature {
@@ -403,6 +411,10 @@ section {
                 font-size: 16px;
                 line-height: 1.2;
             }
+        }
+
+        .elements-to-show-3 {
+            opacity: 0;
         }
     }
 
@@ -464,6 +476,21 @@ section {
                     padding-top: 30px;
                     padding-left: 150px;
                     top: inherit;
+                    z-index: 9999;
+                    background: transparent;
+
+                    &:after {
+                        content: "";
+                        background: {
+                            image: url(../images/bg_mapa_02.jpg);
+                        }
+                        height: 100%;
+                        width: 60vw;
+                        position: absolute;
+                        margin-left: -25px;
+                        z-index: -1;
+                        top: 0;
+                    }
                 }
 
                 .img-estados-dk {
@@ -511,6 +538,12 @@ section {
             padding-top: 11px;
             margin-right: 10px;
             margin-top: 20px;
+
+            &:hover {
+                background-color: $verde;
+                color: $branco;
+                cursor: pointer;
+            }
 
             &.active {
                 background-color: $verde;
@@ -605,6 +638,13 @@ section {
         padding: 20px 0;
         margin-top: 20px;
 
+        @media #{$desktop} {
+            padding: 80px 0 60px;
+            .swiper-slide {
+                margin: 35px 0;
+            }
+        }
+
         .clientes-title {
             color: $azul;
             text-align: center;
@@ -695,11 +735,12 @@ section {
             margin: 30px;
 
             span {
-                background-color: #e3e3e2;
+                background-color: #d8d8d7;
                 width: 15px;
                 height: 15px;
                 margin-left: 10px;
                 cursor: pointer;
+                opacity: 1;
 
                 &.swiper-pagination-bullet-active {
                     background-color: #009cde
@@ -712,6 +753,9 @@ section {
         background-color: #303030;
         color: #fff;
         padding: 20px 0;
+        @media #{$desktop} {
+            padding: 80px 0 60px;
+        }
 
         .contato-title {
 
@@ -722,7 +766,7 @@ section {
                 size: 18px;
                 weight: 300;
             }
-            margin-bottom: 20px;
+            margin-bottom: 40px;
 
             &:before {
                 content: "";
@@ -733,8 +777,8 @@ section {
                 bottom: 0;
 
                 @media #{$tablet} {
-                    width: 25%;
-                    
+                    width: 15%;
+                    bottom: 10px;
                 }
             }
         }

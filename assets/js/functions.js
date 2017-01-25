@@ -273,7 +273,7 @@ $(document).ready(function() {
         }
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
+            'scrollTop': $target.offset().top -65
         }, 900, 'swing', function() {
             window.location.hash = target;
         });
@@ -283,6 +283,26 @@ $(document).ready(function() {
 $(document).on('scroll', function() {
     if ($(this).scrollTop() >= $('.seta').position().top && $(this).scrollTop() <= $('.oquefazemos').position().top) {
         $('.elements-to-show').each(function(index) {
+            $(this).delay(400 * index).animate({
+                'opacity': '1'
+            }, 600);
+        });
+    }
+});
+
+$(document).on('scroll', function() {
+    if ($(this).scrollTop() >= $('.quematendemos').position().top -230 && $(this).scrollTop() <= $('.quematendemos').position().top) {
+        $('.elements-to-show-2').each(function(index) {
+            $(this).delay(400 * index).animate({
+                'opacity': '1'
+            }, 600);
+        });
+    }
+});
+
+$(document).on('scroll', function() {
+    if ($(this).scrollTop() >= $('.comofunciona').position().top -250 && $(this).scrollTop() <= $('.comofunciona').position().top) {
+        $('.elements-to-show-3').each(function(index) {
             $(this).delay(400 * index).animate({
                 'opacity': '1'
             }, 600);

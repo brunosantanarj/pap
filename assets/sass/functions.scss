@@ -49,6 +49,18 @@ $branco:#fff;
   }
 }
 
+.title-2espaco {
+  @media #{$desktop} {
+    margin-bottom: 20px;
+  }
+
+  &::after {
+    @media #{$desktop} {
+      bottom: 25px;
+    }
+  }
+}
+
 .feature-active {
   color: $branco !important;
 }

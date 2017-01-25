@@ -2,13 +2,13 @@
     background: {   
         image: url(../images/img_vitrine.jpg);
         position: 57%;
-        size: 243% 100%;
+        size: cover;
     }
-    height: 500px;
     color: #fff;
+    height: 100vh;
 
     @media #{$tablet}{
-        height: 100vh;
+        
         background: {   
             position: 56%;
             size: 190% 100%;
